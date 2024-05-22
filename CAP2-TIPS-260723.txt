@@ -1,0 +1,144 @@
+1.- REACT:
+GENERAR EL PROYECTO: npx create-react-app nombre-app
+Si les sale un msg de error: ejecutamos un comando previamente.
+npm install -g create-react-app
+
+https://stackoverflow.com/questions/38751830/create-react-app-installation-error-command-not-found
+
+2.- Ejecutar el proyecto: npm start (situarnos dentro del proyecto)
+==================================================================================
+Como incorporar bootstrap al proyecto.
+1.- npm install bootstrap
+2.- verificar que se haya instalado correctamente: package.json
+3.- realizar los import necesario: index.js
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+==================================================================================
+Componentes: Es todo aquello que puede ser renderiza.
+1.-Tres formas de generar un componente: (funciones tradicionales, funciones arrow, clase)
+2.- funcion arrow o tradicionales: return (contenido que se renderiza: jsx)
+3.- clases: render(){ return(renderiza contenido: jsx) }
+4.- props: existe en ambos tipos de componentes. 
+
+Ejercicio: se le pide mostrar la informacion en card o table, 
+para ello debe usar un props que le indique que tipo de salida requiere: salida:1 card salida:2 tabla.
+
+Ejercicio: genera un componente de actividades con % de avance. 
+y mostrar los que ya se realizaron, los que estan siendo avanzado, y los culminados.
+Kanban: componente que muestra el tablero dividido en 3 partes: por hacer, en ejecucion, culminado.
+Las actividades clasificadas se muestran en tres columnas con colores distintos.
+
+===================================================================================
+React: Estado
+1.- el estado es inherente al componente clase.
+2.- Los componentes funcion NO tienen estado, pero se puede simular.
+3.- el estado es un objeto para componentes clase.
+4.- el objeto peude contener las propiedades o atributos necesarios que pueden ser actualizados.
+5.- el unico que puede actualizar la propiedad es el metodo this.setState({})
+
+Ejercicio1: generar un contador que incremente y decremente un valor.
+Ejercicio2: generar un atributo nota debe de estar en el rango de nota: [0-20]
+Ejercicio3: indique la accion que realizo con el atributo nota cuando se aumenta o disminuye.
+
+Ciclo de vida del componente: solo los componente clase
+exiten dos metodos: 
+componentDidMount(): se ejecuta en el primer renderizado, 
+componentWillUnmount(): se destruye al componente.
+
+Ejercicio4: generar un contador automatico que va [0-5] cada 1 segundo y luego se reinicio automaticamente. ciclo de vida del componente
+Ejercicio5: genera un componente reloj usando el ciclo de vida del componente.
+
+Ejercicio6: se requiere mostrar es un panel publicitario los platos que ofrece un restaurante. cada 2 segundos.
+-------------------------------------------------------------------------------------------------------------
+4.- El equipo que desarrollo react le agrego hooks a los componentes funcion para simular estado.
+componente funcion puede adicionar un hook para simular estado: useState(inicializacion);
+const [x,setX]=useState(inicializacion).
+
+Ejercicio1: implementar un contador utilizando hook comp funcion
+Ejercicio2: implementar el avance de secciones de un Examen de Admision utilizando hook, el examen solo tiene 4 secciones.
+Al llegar a la seccion 4 debe reiniciar. Si permite retroceder.
+
+Ejercicio3: implementar un examen admision usando arreglo externo y hook. Puede avanzar y retroceder.
+Ejercicio4: implementar el examen de admision automatico (cambia de seccion cada 2 seg): hook. useEffect
+useEffect: simular el ciclo de vida del componente porque podemos incluir simulando el compDM, compWUM
+Ejercicio5: implementando un reloj con hook useState, useEffect.
+
+=============================================================================
+Router: libreria react-router-dom v6
+Comando npm install react-router-dom
+1.- configurar el ruteo: index.js
+import { BrowserRouter as Router } from 'react-router-dom';
+   <Router>
+ </Router>
+
+2.- Generar el componente menu.
+<Routes> <Route path, elemento={componente}>
+<Link to="path">Enlace 1</Link> reemplazar <a href=></a>
+
+====================================================================================================
+Ejercicio: Se quiere mostrar informacion del detalle de un producto que ofrece una bodega
+Para ello necesitamos una lista de productos y al darle click mostrara el detalle en el lado derecho.
+Sugerencia utilice oulet y ruta anidada.
+------------------------------------------------------------------------------------------------------
+axios: es un libreria que permite comunicar el proyecto react con el proyecto json-server API.
+Comando: npm install axios
+
+proyR <--> axios <-->API
+axios permite realizar las operaciones get,post,delete,put.
+==================================================================================================
+1.- debemos cambiar el puerto al api-server
+  "scripts": {
+    "start":"json-server --watch db.json --port 3001"
+  },
+
+2.- Definimos el proyecto: empresas. Gestor de Empresas --> Listar, Registro
+===================================================================================================
+Redux: reduxtoolkit, redux.
+
+1.- Instalar redux toolkit
+npm install @reduxjs/toolkit 
+2.- instalar react-redux
+npm install react-redux
+3.- configurar redux: index.js
+
+Ejercicio1: generar un contador con redux.
+1.- Folder comp-redux: --> features : reducer (Slice: funciones o metodos que actualizan al objeto que maneja estado)
+2.- Configuramos en el almacen el objeto que contiene estado.
+3.- Generamos el componente UI. 
+4.- dentro del componente UI llamamos a los hooks que pertenecen a react-redux: 
+	useSelector: traer el estado actual del objeto que tiene state.
+	useDispatch: es el hook que puede traer a la funcion que actualiza el objeto con state.
+
+Ejercicio2: panel publicitario de productos de bodega cada 3 seg utilizando redux.
+=======================================================================================================
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

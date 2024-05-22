@@ -1,0 +1,260 @@
+{
+  "platos": [
+    {
+      "id": 1,
+      "nombre": "arroz con pollo",
+      "precio": 20.34,
+      "descripcion": "a base de arroz verde con pollo se sirve con ensalada criolla",
+      "procedencia": "Costa",
+      "chefId": 4,
+      "ingredientes": [
+        "pollo",
+        "arroz",
+        "arverjitas",
+        "cebolla"
+      ]
+    },
+    {
+      "nombre": "mazamorra morada",
+      "precio": 4.34,
+      "descripcion": "a base de maiz morado con chuño, se sirve con canela molida y clavo con manzana y piña",
+      "procedencia": "Costa",
+      "chefId": 8,
+      "ingredientes": [
+        "chuño",
+        "arroz",
+        "canela",
+        "piña",
+        "manzana"
+      ],
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "lomo saltado",
+      "precio": 24.34,
+      "descripcion": "a base de carne de res, papa amarilla, cebolla y tomate se sirve con arroz",
+      "procedencia": "Costa",
+      "chefId": 4,
+      "ingredientes": [
+        "carne de res",
+        "arroz",
+        "papa amarilla",
+        "cebolla",
+        "tomate"
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "causa Limeña",
+      "precio": 15,
+      "descripcion": "Puré de papa amarilla sazonado y relleno con pollo",
+      "procedencia": "Costa",
+      "chefId": "3",
+      "ingredientes": [
+        "papa amarilla",
+        "pollo",
+        "limón",
+        "ají amarillo"
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "carapulcra con sopa seca",
+      "precio": 30.34,
+      "descripcion": "a base de todas las carnes pavo, conejo, pollo y papa fresca a base de mani se sirve sopa seca",
+      "procedencia": "Costa",
+      "chefId": 2,
+      "ingredientes": [
+        "pollo",
+        "pavo",
+        "conejo",
+        "mani",
+        "arroz",
+        "tallarines",
+        "albahaca"
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "paella valencia",
+      "precio": 46.34,
+      "descripcion": "a base de arroz meloso con todas las carnes y mariscos",
+      "procedencia": "Internacional",
+      "chefId": 4,
+      "ingredientes": [
+        "conejo",
+        "pollo",
+        "almejas",
+        "cebolla",
+        "arroz",
+        "azafran"
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "rocoto relleno",
+      "precio": 18.34,
+      "descripcion": "a base de rocoto, huevo, leche, carne molida con queso",
+      "procedencia": "Sierra",
+      "chefId": 2,
+      "ingredientes": [
+        "rocoto",
+        "leche",
+        "huevo",
+        "carne molida",
+        "queso"
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "cuy chactado",
+      "precio": 25.34,
+      "descripcion": "a base de cuy se sirve con arroz y papa sancochada",
+      "procedencia": "Sierra",
+      "chefId": 3,
+      "ingredientes": [
+        "cuy",
+        "arroz",
+        "papa"
+      ]
+    },
+    {
+      "id": 9,
+      "nombre": "tiradito",
+      "precio": 16,
+      "descripcion": "Plato similar al ceviche pero cortado en láminas más delgadas",
+      "procedencia": "Costa",
+      "chefId": "1",
+      "ingredientes": [
+        "pescado",
+        "limón",
+        "ají amarillo",
+        "salsa de pescado"
+      ]
+    },
+    {
+      "id": 10,
+      "nombre": "juane",
+      "precio": 18,
+      "descripcion": "Arroz envuelto en hojas de bijao con pollo y especias",
+      "procedencia": "Selva",
+      "chefId": "5",
+      "ingredientes": [
+        "arroz",
+        "pollo",
+        "huevos",
+        "aceitunas",
+        "especias"
+      ]
+    },
+    {
+      "nombre": "ceviche",
+      "precio": 20,
+      "descripcion": "Plato a base de pescado con limon se sirve con camote. cancha y cebolla",
+      "procedencia": "Costa",
+      "chefId": "6",
+      "ingredientes": [
+        "pescado",
+        "limón",
+        "leche de tigre",
+        "camote"
+      ],
+      "id": 11
+    }
+  ],
+  "chefs": [
+    {
+      "id": 1,
+      "nombre": "Raul Rodriguez",
+      "edad": 27,
+      "calificacion": 4
+    },
+    {
+      "id": 2,
+      "nombre": "Maria Laguna",
+      "edad": 35,
+      "calificacion": 7
+    },
+    {
+      "id": 3,
+      "nombre": "Luis Ramirez",
+      "edad": 31,
+      "calificacion": 5
+    },
+    {
+      "id": 4,
+      "nombre": "Luisa Rivera",
+      "edad": 24,
+      "calificacion": 10
+    },
+    {
+      "id": 5,
+      "nombre": "Ricardo Mendoza",
+      "edad": 48,
+      "calificacion": 9
+    },
+    {
+      "nombre": "Luis Polo",
+      "edad": 57,
+      "calificacion": 10,
+      "id": 6
+    },
+    {
+      "nombre": "Virgilio Acuario",
+      "edad": 48,
+      "calificacion": 10,
+      "id": 7
+    },
+    {
+      "nombre": "Andy Barco",
+      "edad": 24,
+      "calificacion": 6,
+      "id": 8
+    }
+  ],
+  "empresas": [
+    {
+      "id": 1,
+      "nombre": "Apple",
+      "descripcion": "es una empresa de tecnologia y moviles",
+      "calificacion": 9
+    },
+    {
+      "id": 2,
+      "nombre": "Twitter X",
+      "descripcion": "es una empresa de social media",
+      "calificacion": 7
+    },
+    {
+      "id": 3,
+      "nombre": "Microsoft",
+      "descripcion": "es una empresa de tecnologia y software",
+      "calificacion": 9
+    },
+    {
+      "nombre": "HP",
+      "descripcion": "empresa de impresoras y de mouse",
+      "calificacion": "6",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "nombre": "Alicorp",
+      "descripcion": "empresa de productos consumo masivo",
+      "calificacion": "9"
+    },
+    {
+      "nombre": "Samsung",
+      "descripcion": "empresa de moviles plegables",
+      "calificacion": "5",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "nombre": "Plaza Vea",
+      "descripcion": "supermercado peruano",
+      "calificacion": "8"
+    }
+  ]
+}
